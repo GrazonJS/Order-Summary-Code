@@ -1,34 +1,60 @@
+
 body{
     background-image: url(pattern-background-desktop.svg);
-    background-color: rgb(183, 208, 231);
+    background-color: aliceblue;
     background-size: contain;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .background{
+    
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+    align-items:center;
+    margin-top: 150px;
 }
 
 .container{
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #ffffff;
     width: 450px;
     min-width: 300px;
     border-radius: 25px;
+    color: white;
+    box-shadow: 0px 20px 12px #554c4c5c;
     
 }
 
+.image-container{
+
+    display: flex;
+    flex-shrink: 2;
+
+}
 .text-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px 20px 25px 20px;
+    margin: 1em 3em;
+}
+@media (min-width: 375px) {
+
+    .container{
+        margin: 1em 2em;
+    }
+    .image-container{
+
+        display: flex;
+        flex-shrink: 2;
+    
+    }
+
+
 }
 
 .plan{
@@ -36,7 +62,7 @@ body{
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
-    background-color: rgb(229, 241, 251);
+    background-color:aliceblue;
     border-radius: 25px;
     align-items: center;
     
@@ -60,14 +86,21 @@ body{
 }
 
 .plan-2{
-    margin:0px 25px 0px 0px ;
+    color: #1d1dc6;
+    margin-right: 20px;
+    font-style: 'Red Hat Display';
+    font-weight: 500;
 }
+.plan-2:hover{
+    color: blueviolet;
+}
+
 
 .button-1{
 
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
-    padding: 20px 7em;
+    padding: 15px 6.5em;
     margin: 20px 0px; 
     background-color: #1d1dc6;
     font-style:normal;
@@ -77,16 +110,38 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    color: white;
+    box-shadow: 0px 10px 10px #8d7bf272;
 }   
 
 .button-2{
     border: none;
-    padding: 10px 0px   ;
-    color: rgb(0, 0, 0);
+    padding: 0px 0px 10px 0px  ;
+    color: rgb(10, 10, 10); 
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     background-color: #ffffff;
-    
+    font-family: 'Red Hat Display';
+    font-weight: 500;
 }
+ p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #2c2a2a;
+    text-shadow: none;
+ }
+
+h1  {
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    color: #2c2a2a;
+    text-shadow: none;
+}
+
+.button-1:hover{
+    background-color: blueviolet;
+}
+    
